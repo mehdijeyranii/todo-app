@@ -1,10 +1,11 @@
-import ThemeButton from "./components/theme/ThemeButton";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-black dark:text-white">
-      <ThemeButton />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
   );
 };
 

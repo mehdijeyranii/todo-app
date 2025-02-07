@@ -50,7 +50,7 @@ const ThemeButton = () => {
         />
       </button>
       {isOpen && (
-        <div className="absolute bg-zinc-300 dark:bg-zinc-700 mt-3 w-40 left-0 p-2 rounded-lg flex flex-col justify-start items-start gap-2">
+        <div className="absolute bg-zinc-300 dark:bg-zinc-800 mt-2 w-40 left-0 p-2 rounded-lg flex flex-col justify-start items-start gap-2">
           {themeOptions.map(({ mode, label, icon }) => (
             <button
               key={mode}
