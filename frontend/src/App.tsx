@@ -1,17 +1,10 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
+import ThemeButton from "./components/theme/ThemeButton";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div className="min-h-screen flex flex-col items-center justify-center text-black dark:text-white">
+      <ThemeButton />
+    </div>
   );
 };
 

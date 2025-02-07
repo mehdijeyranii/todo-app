@@ -3,14 +3,16 @@ import { useState } from "react";
 
 const Register = () => {
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleRegister = async () => {
     await axios.post("http://localhost:5000/api/auth/register", {
       username,
+      email,
       password,
     });
-    alert("ثبت نام با موفقیت انجام شد");
+    alert("ثبت نام با موفقیت انجام شد");    
   };
   return (
     <div className="flex flex-col items-center mt-10">
@@ -19,6 +21,12 @@ const Register = () => {
         className="border p-2"
         placeholder="نام کاربری"
         onChange={(e) => setUsername(e.target.value)}
+      />
+      <input
+        type="email"
+        className="border p-2"
+        placeholder="example@gmail.com"
+        onChange={(e) => setEmail(e.target.value)}
       />
       <input
         type="password"
