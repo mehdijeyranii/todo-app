@@ -34,7 +34,7 @@ const ThemeButton = () => {
   return (
     <div ref={dropdownRef} className="relative">
       <button
-        className="w-32 py-2 grid grid-cols-[1fr_2fr_1fr] place-items-center gap-1 rounded-lg bg-zinc-300 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-50 px-1"
+        className="w-32 h-9 grid grid-cols-[1fr_2fr_1fr] place-items-center items-center gap-1 rounded-lg bg-zinc-300 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-50 px-1"
         onClick={() => setIsOpen((prev) => !prev)}
       >
         {selectedTheme?.icon}
