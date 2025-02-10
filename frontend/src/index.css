@@ -6,4 +6,21 @@
   body {
     @apply bg-zinc-300 text-zinc-700 dark:bg-zinc-950 dark:text-zinc-300;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-px
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply rounded-lg bg-zinc-900
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-zinc-500
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    @apply bg-zinc-700
+  }
 }
